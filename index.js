@@ -40,6 +40,13 @@ function cellClicked(){
 function updateCell(cell, index){
     options[index] = currentPlayer
     cell.textContent = currentPlayer
+    if (currentPlayer == "X"){
+        cell.style.color = "red"
+
+    }else{
+        cell.style.color = "green"
+    }
+    
 
 
 }
@@ -80,7 +87,10 @@ function checkWinner(){
 function restartGame(){
     currentPlayer = "X"
     options = ["", "", "", "", "", "", "", "", ""]
-    cells.forEach( cell => cell.textContent = "")
+    cells.forEach( cell =>{ 
+        cell.textContent = ""
+        cell.style.color = "black"
+    } )
     statusText.textContent = `${currentPlayer}'s turn`
    
     running = true
