@@ -1,16 +1,26 @@
 body {
     font-family: Arial, sans-serif;
-    display: flex;
-    justify-content: center;
+    /* display: flex; */
+    justify-content: center; 
     align-items: center;
-    height: 100vh;
+    
     margin: 0;
     background: linear-gradient(to right, #eb74e5, #9face6);
 }
 
+#title{
+    margin: auto;
+    text-align: center;
+}
+
+
 #game, #gameModeSelection {
     width: 90%;
+    
     max-width: 400px;
+    margin: auto;
+    padding: 100px;
+   
     text-align: center;
 }
 
