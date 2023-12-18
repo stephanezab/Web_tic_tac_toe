@@ -1,6 +1,5 @@
 body {
     font-family: Arial, sans-serif;
-    /* display: flex; */
     justify-content: center; 
     align-items: center;
     
@@ -15,8 +14,7 @@ body {
 
 
 #game, #gameModeSelection {
-    width: 90%;
-    
+    width: 90%;  
     max-width: 400px;
     margin: auto;
     padding: 100px;
