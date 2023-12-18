@@ -1,30 +1,55 @@
-body{
-    background-color: rgb(46, 2, 2);
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: linear-gradient(to right, #eb74e5, #9face6);
 }
 
-
-
-.cell{
-    width: 75px;
-    height: 75px;
-    border: 2px solid;
-    box-shadow: 0 0 0 2px;
-    line-height: 75px;
-    font-size: 50px;
-    cursor: pointer;
-    
-}
-
-#gameContainer{
-    font-family: "permanent Marker", cursive;
+#game, #gameModeSelection {
+    width: 90%;
+    max-width: 400px;
     text-align: center;
-
 }
 
-#cellContainer{
+.cell {
+    background: #fff;
+    border: 1px solid #ddd;
+    padding: 20px;
+    font-size: 40px;
+    text-align: center;
+    cursor: pointer;
+}
+
+#board {
     display: grid;
-    grid-template-columns: repeat(3, auto);
-    width: 225px;
-    margin: auto;
-   
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5px;
+}
+
+#status, .gameOverText {
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#gameOverScreen {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.75);
+    color: white;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
