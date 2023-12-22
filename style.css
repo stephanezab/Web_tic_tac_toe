@@ -48,6 +48,10 @@ button {
     cursor: pointer;
 }
 
+#singlePlayerBtn, #multiPlayerBtn{
+    padding: 40px 50px;   
+}
+
 #gameOverScreen {
     display: none;
     position: fixed;
