@@ -27,4 +27,4 @@ A classic Tic Tac Toe game built as a web application using JavaScript, HTML, an
 
 1. **Clone or download this repository:**
    ```bash
-   git clone https://github.com/your-username/tic-tac-toe.git
+   git clone https://github.com/stephanezab/Web_tic_tac_toe.git
